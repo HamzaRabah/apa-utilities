@@ -33,7 +33,7 @@ export async function POST() {
         const data: any = await res.json();
         console.log("route log ===============");
         console.log({data});
-        return NextResponse.json({embedUrl: data["embedUrl"] ?? "", data: data ?? {}});
+        return NextResponse.json({embedUrl: data["embedUrl"] ?? "https://retoolin.tryretool.com/embedded/public/f7607e1f-670a-4ebf-9a09-be54cf17181e", data: data ?? {}});
     } catch (error) {
         console.log({error});
         return NextResponse.json({error});
