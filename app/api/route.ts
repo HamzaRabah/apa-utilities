@@ -6,16 +6,12 @@ export async function GET() {
 
 export async function POST() {
     const headers: HeadersInit = {
-        'Content-Type': 'application/json',
-        'API-Key': process.env.DATA_API_KEY ?? ""
+        'Content-Type': 'application/json', 'API-Key': process.env.DATA_API_KEY ?? ""
     };
     const res = await fetch('https://httpdump.app/dumps/30b1fff4-70f9-434b-abea-acedb31ec63d', {
-        method: 'POST',
-        headers: headers
-        , body: JSON.stringify({time: new Date().toISOString()}),
+        method: 'POST', headers: headers, body: JSON.stringify({time: new Date().toISOString()}),
     })
 
-    const data = await res.json()
 
-    return NextResponse.json(data)
+    return NextResponse.json({embedUrl: "https://retoolin.tryretool.com/embedded/public/f7607e1f-670a-4ebf-9a09-be54cf17181e"})
 }
