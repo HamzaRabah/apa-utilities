@@ -6,7 +6,7 @@ export async function GET() {
 
 export async function POST() {
     // base URL of your Retool instance + https://
-    const retoolURL = "https://apaleo.retool.com";
+    const retoolURL = "https://retool.apaleo.com";
 // key you generate in Settings > API in Retool
     const secret_key = process.env.RETOOL_API_KEY ?? "";
     const app_uuid = "b0e9156c-2b0a-11ee-b939-7b6b556284d2";
