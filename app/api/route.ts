@@ -21,7 +21,7 @@ export async function POST() {
         landingPageUuid: app_uuid, // IDs of the groups you want the user to belong to - array of IDs
         groupIds: [1865667], // external identifier - typically email address
         externalIdentifier: "123", userInfo: {
-            firstName: "", lastName: "", email: "hamza.rabah@apaleo.com",
+            firstName: "Hamza", lastName: "Rabah", email: "hamza.rabah@apaleo.com",
         }, metadata: {
             msg: "Custom message",
         },
